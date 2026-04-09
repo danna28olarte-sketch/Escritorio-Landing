@@ -73,21 +73,37 @@
     <!-- Sección 1 (Hero) - Blanco -->
     <section class="bg-white py-14 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div class="flex flex-col md:grid md:grid-cols-2 gap-10 items-center">
+                
+                <!-- Título visible solo en móvil -->
+                <div class="block md:hidden order-1 text-center">
+                    <h1 class="font-heading text-4xl font-semibold text-primary leading-tight tracking-tight">
+                        Haz tu trabajo desde casa <br />
+                        <span class="text-accent italic font-medium">mucho más cómodo.</span>
+                    </h1>
+                </div>
+
+                <!-- Imagen Hero -->
+                <div class="order-2 md:order-last w-full aspect-square rounded-3xl overflow-hidden bg-white shadow-xl hover:shadow-2xl hover:border-accent/30 transition-all duration-300 border border-gray-100 group">
+                    <img src="Imagenes/EscritorioHeroS.png" alt="Escritorio Gamer Ergonómico"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+
                 <!-- Text Content -->
-                <div class="space-y-6">
+                <div class="order-3 md:order-first space-y-6 mt-2 md:mt-0">
+                    <!-- Título visible solo en desktop -->
                     <h1
-                        class="font-heading text-4xl md:text-5xl lg:text-6xl font-semibold text-primary leading-tight tracking-tight">
+                        class="hidden md:block font-heading md:text-5xl lg:text-6xl font-semibold text-primary leading-tight tracking-tight">
                         Haz tu trabajo desde casa <br />
                         <span class="text-accent italic font-medium">mucho más cómodo.</span>
                     </h1>
 
-                    <p class="text-lg text-gray-600 leading-relaxed font-light max-w-lg">
+                    <p class="text-lg text-gray-600 leading-relaxed font-light md:max-w-lg text-center md:text-left">
                         Un escritorio diseñado para largas jornadas frente al computador, que mejora tu postura y reduce la incomodidad.
                     </p>
 
                     <!-- CTA WhatsApp Verde -->
-                    <div class="pt-4">
+                    <div class="pt-4 flex justify-center md:justify-start">
                         <a href="https://wa.me/573144267562" target="_blank" rel="noopener noreferrer"
                             class="inline-flex justify-center items-center gap-3 bg-whatsapp hover:bg-[#20bd5a] text-white font-medium tracking-wide text-sm px-10 py-4 rounded-full transition-all duration-300 shadow-lg shadow-whatsapp/20 hover:shadow-whatsapp/30 hover:scale-105 w-full sm:w-auto">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -98,13 +114,6 @@
                         </a>
                     </div>
                 </div>
-
-                <!-- Imagen Hero -->
-                <div
-                    class="w-full aspect-square rounded-3xl overflow-hidden bg-white shadow-xl hover:shadow-2xl hover:border-accent/30 transition-all duration-300 border border-gray-100 group">
-                    <img src="Imagenes/EscritorioHeroS.png" alt="Escritorio Gamer Ergonómico"
-                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                </div>
             </div>
         </div>
     </section>
@@ -112,22 +121,27 @@
     <!-- Sección 2 (Dolores) - Blanco -->
     <section class="bg-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div class="flex flex-col md:grid md:grid-cols-2 gap-10 items-center">
+
+                <!-- Título visible solo en móvil -->
+                <div class="block md:hidden order-1 text-center">
+                    <h2 class="font-heading text-3xl md:text-3xl font-semibold text-primary tracking-tight">¿Tu escritorio actual afecta tu rendimiento?</h2>
+                </div>
 
                 <!-- Imagen -->
-                <div class="w-full flex justify-center">
-                    <img src="Imagenes/DoloresEscritorio.png" alt="Persona sufriendo dolores por mal escritorio"
+                <div class="order-2 w-full flex justify-center">
+                    <img src="Imagenes/DoloresEscritorio.jpeg" alt="Persona sufriendo dolores por mal escritorio"
                         class="w-full object-cover rounded-2xl shadow-sm hover:scale-[1.02] transition-transform duration-500">
                 </div>
 
                 <!-- Text Content -->
-                <div class="space-y-6">
-                    <div class="mb-6">
+                <div class="order-3 space-y-6 mt-4 md:mt-0">
+                    <div class="hidden md:block mb-6">
                         <h2 class="font-heading text-3xl md:text-4xl font-semibold text-primary tracking-tight mb-4">¿Tu
                             escritorio actual afecta tu rendimiento?</h2>
                     </div>
 
-                    <p class="text-gray-600 font-light leading-relaxed text-base">
+                    <p class="text-gray-600 font-light leading-relaxed text-base text-center md:text-left">
                         Pasar horas frente a la pantalla en un escritorio rígido puede generar tensión en el cuello, problemas de muñeca y fatiga extrema. Si no puedes ajustar la altura ni la postura cómoda, tu salud y resultados se ven comprometidos.
                     </p>
 
@@ -135,20 +149,20 @@
                         <li class="flex items-start gap-3">
                             <span
                                 class="material-symbols-outlined text-[#c01b84] mt-0.5 flex-shrink-0">sentiment_dissatisfied</span>
-                            <span class="text-gray-700 font-medium">Dolores de espalda por mala altura</span>
+                            <span class="text-gray-700 font-medium text-left">Dolores de espalda por mala altura</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <span
                                 class="material-symbols-outlined text-[#c01b84] mt-0.5 flex-shrink-0">airline_seat_recline_normal</span>
-                            <span class="text-gray-700 font-medium">Tensión en muñecas y brazos</span>
+                            <span class="text-gray-700 font-medium text-left">Tensión en muñecas y brazos</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <span class="material-symbols-outlined text-[#c01b84] mt-0.5 flex-shrink-0">bed</span>
-                            <span class="text-gray-700 font-medium">Falta de espacio para tus periféricos</span>
+                            <span class="text-gray-700 font-medium text-left">Falta de espacio para tus periféricos</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <span class="material-symbols-outlined text-[#c01b84] mt-0.5 flex-shrink-0">chair_alt</span>
-                            <span class="text-gray-700 font-medium">Poca movilidad en tu zona de batalla</span>
+                            <span class="text-gray-700 font-medium text-left">Poca movilidad en tu zona de batalla</span>
                         </li>
                     </ul>
                 </div>
